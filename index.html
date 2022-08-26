@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a6f005504f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          td, th{
+            text-align: left;
+            padding: 8px;
+            text-align: center;
+            width: 15%;
+          }
+          input[type=text] {
+            padding: 8px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+          input[id=email] {
+            padding: 8px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 27%;
+          }
+          tr:nth-child(even) {
+            background-color: #f0f1f1;
+          }
+          input[id=comments] {
+            padding: 8px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 120px;
+          }
+          #submit {
+            border: none;
+            color:black;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+          }
+          
+
+    </style>
+</head>
+<body>
+    
+    <label for="Name" style="font-weight: bold;">Name <span style="color: rgb(227, 42, 42);">&#8727;</span>
+    </label>  <br>
+    <div class="nametext">
+    <input type="text" id="fname"><sub>First</sub>  
+    <input type="text" id="lname"><sub>Last</sub><br><br>
+    </div>
+    <label for="Email" style="font-weight: bold;">Email <span style="color: rgb(227, 42, 42);">&#8727;</span></label><br>
+    
+    <input type="text" id="email"><br><br>
+
+    <label for="experience" style="font-weight: bold;">Your Experience <span style="color: rgb(227, 42, 42);">&#8727;</span></label><br>
+
+    <i class="fa-solid fa-star" style="color: rgb(211, 109, 50);"></i>
+    <i class="fa-solid fa-star" style="color: rgb(211, 109, 50);"></i>
+    <i class="fa-solid fa-star" style="color: rgb(211, 109, 50);"></i>
+    <i class="fa-solid fa-star" style="color: rgb(211, 109, 50);"></i>
+    <i class="fa-solid fa-star" style="color: rgb(211, 109, 50);"></i>
+    <br><br>
+    
+    <label for="rating text">Overall, how would you rate you experience with us?</label><br><br>
+
+    <label for="satisfied" style="font-weight: bold;">How satisfied are you with <span style="color: rgb(227, 42, 42);">&#8727;</span></label>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>very Unsatisfied</th>
+            <th>Unsatisfied</th>
+            <th>Natural</th>
+            <th>Satisfied</th>
+            <th>very Satisfied</th>
+        </tr>
+        <tr>
+            <td style="text-align:left">Purchase</td>
+            <td><input type="radio" id="c1"></td>
+            <td><input type="radio" id="c2"></td>
+            <td><input type="radio" id="c3"></td>
+            <td><input type="radio" id="c4"></td>
+            <td><input type="radio" id="c5"></td>
+
+        </tr>
+        <tr>
+            <td style="text-align:left">Service</td>
+            <td><input type="radio" id="c1"></td>
+            <td><input type="radio" id="c2"></td>
+            <td><input type="radio" id="c3"></td>
+            <td><input type="radio" id="c4"></td>
+            <td><input type="radio" id="c5"></td>
+        </tr>
+        <tr>
+            <td style="text-align:left">Company Overall</td>
+            <td><input type="radio" id="c1"></td>
+            <td><input type="radio" id="c2"></td>
+            <td><input type="radio" id="c3"></td>
+            <td><input type="radio" id="c4"></td>
+            <td><input type="radio" id="c5"></td>
+        </tr>
+    </table><br>
+    <label for="rating head2" style="font-weight: bold;">How likely are you to <span style="color: rgb(227, 42, 42);">&#8727;</span></label><br>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>very Unlikely</th>
+            <th>Unlikely</th>
+            <th>Natural</th>
+            <th>likely</th>
+            <th>very likely</th>
+        </tr>
+        <tr>
+            <td style="text-align:left">Buy from us again</td>
+            <td><input type="radio" id="c1"></td>
+            <td><input type="radio" id="c2"></td>
+            <td><input type="radio" id="c3"></td>
+            <td><input type="radio" id="c4"></td>
+            <td><input type="radio" id="c5"></td>
+
+        </tr>
+        <tr>
+            <td style="text-align:left">Recommend our product to others</td>
+            <td><input type="radio" id="c1"></td>
+            <td><input type="radio" id="c2"></td>
+            <td><input type="radio" id="c3"></td>
+            <td><input type="radio" id="c4"></td>
+            <td><input type="radio" id="c5"></td>
+        </tr>
+        <tr>
+            <td style="text-align:left">Recommend our company to others</td>
+            <td><input type="radio" id="c1"></td>
+            <td><input type="radio" id="c2"></td>
+            <td><input type="radio" id="c3"></td>
+            <td><input type="radio" id="c4"></td>
+            <td><input type="radio" id="c5"></td>
+        </tr>
+    </table>
+    <br><br>
+    <label for="comments" style="font-weight: bold;">Additional comments or suggestions</label><br>
+    <input type="text" id="comments"><br>
+    <button type="button" id="submit">submit</button>
+</body>
+</html>
